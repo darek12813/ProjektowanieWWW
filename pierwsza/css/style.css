@@ -184,41 +184,7 @@ body,html{
         padding-bottom:40px;
     }}
 
-@media (max-width: 380px){
-    .WhoIAm h2{
-        font-size:24pt;
-    }
-    .MySkils h2{
-        font-size:24pt;
-    }
-}
-.WhoIAm h2{
-    font-size: 30pt;
-}
-.MySkils h2{
-    font-size: 30pt;
-}
-.WhoIAm, .MySkils{
-    font-size: 20pt;
-    text-align: center;
-    display: inline-block;
-}
 
-.WhoIAm{
-   
-   float: left;
-    margin-left: 150px;
-    width: 40%;
-    
-}
-
-.MySkils{
-   
-   float: left;
-    margin-left: 50px;
-    width: 40%;
-    
-}
 
 #Kontakt{
     
@@ -251,14 +217,16 @@ footer h1{
     margin: 0;
     
 }
+@media (max-width: 560px){
+    footer h1{
+        font-size:5px;
+    }
+}
 
 .Tkontakt{
     font-family: 'Philosopher';
     font-size:24pt;
     text-align: center;
-}
-.ii{
-    display: inline-block;
 }
 
 .email{
@@ -286,6 +254,7 @@ input[type*='text']{
     margin-top:20px;
     font-size:14pt
 }
+
 
 textarea{
     font-family: 'Philosopher';
@@ -364,8 +333,48 @@ textarea{
     background:purple;
 }
 
-
-   
+@media (max-width: 380px){
+    .Tkontakt{
+        font-size:24pt
+    }
+}
+@media (max-width: 640px){
+    #Kontakt{
+        height: auto;
+    }
+    .contactinf{
+       flex-direction: column;
+    }
+    .localization, .phone, .poczta{
+        display: block;
+    }
+    .email{
+        flex-direction: column;
+    }
+    .ii {
+        display: block;
+        margin-bottom: -10px;
+    }
+    .mm {
+        display: block;
+        margin-bottom: -10px;
+    }
+    .tt {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type*='text']{
+       
+        width:300px;
+    }
+    textarea{
+        width:300px;
+    }
+    .send button{
+        left: 0;
+        align-items:center;
+    }
+}  
 
 
 

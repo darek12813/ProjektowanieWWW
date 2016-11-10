@@ -204,7 +204,7 @@ footer{
     align-items:center}
 
 footer{
-    
+    padding: 0;
     background: black;
     color: white;
     font-size: 8px;

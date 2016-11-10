@@ -179,7 +179,6 @@ body,html{
     #Omnie{
         height:auto;
         padding-top:40px;
-        padding-bottom:40px;
     }}
 
 
@@ -187,7 +186,7 @@ body,html{
 #Kontakt{
     
     background: url("../images/contactimg.jpg")center no-repeat;
-    padding-top:90px;
+    
     padding-bottom:90px;
     width: 100vw;
     height:900px;

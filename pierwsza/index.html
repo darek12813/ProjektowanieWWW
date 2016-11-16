@@ -5,52 +5,86 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DariuszStępień</title>
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        
     </head>
     
     <body>
-         <div class="box_menu ">
-                <ul class="menu">
-                    <li >
-                        <a  href="#home">HOME</a>
-                    </li>
-                    <li >
-                        <a  href="#Omnie">O Mnie</a>
-                    </li>
-                   
-                    <li >
-                        <a  href="#Kontakt">Kontakt</a>
-                    </li>
-                </ul>
-            </div>
+         <div id="topnav" style="display: flex;">
+            <ul>
+                <li><a href="#Home" nazwa = "Home">Home</a></li>
+                <li><a href="#About"nazwa = "About">About</a></li>
+                <li><a href="#Skils"nazwa = "Skils">Skils</a></li>
+                <li><a href="#Contact"nazwa="Contact">Contact</a></li> 
+            </ul>
+        </div>
         
-        <div id="home">
-            <div class="hometitle" style="display: block;"> 
-                <div class="tytul">
-                    <h1>Darek Stępień</h1>
+        <div id="Home">
+            <div class="HomeTitle">
+                <div class="Name">
+                    <h1>Dariusz Stępień</h1>
                 </div>
-                <div class="Podkreslenie">
-                     <span></span>
+                <div class="kreska">
+                    <span></span>
                 </div>
-                <h2>PROJEKT</h2>
-                <h3>Z</h3>
-                <h2>ZAAWANSOWANE TECHNIKI WWW</h2>
+                <h2>Portfolio</h2>
             </div>
         </div>
         
-        <div id="Omnie">
-            <div class="znaczek">
-                <span></span>
-                <img src="images/information.png" alt=""/>
-                <span></span>
+        <div id="About">
+            <div class="AboutBackground">
+                <div class="przez">
+                    <div class="AboutTitle">
+                        <h1>KIM JESTEM</h1>
+                        <h2>I</h2>
+                        <h1>CZYM SIĘ INTERESUJĘ</h1>
+                    </div>
+                    <div class="opis">
+                        <div class="Omnie">
+                            <h1>STUDENT INFORMATYKI</h1>
+                            <p>Jestem studentem informatyki na Uniwersytecie Jagielońskim.</p>
+                        </div>
+                        <div class="Zainteresowania">
+                            <h1>ZAINTERESOWANIA</h1>
+                            <p>Lubię oglądać filmy a także interesuje się samochochodami i nowymi technologiami.</p>
+                        </div>
+                        <div class="Costamjeszcze">
+                            <h1>Cos tam jeszcze</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies, nulla quis aliquet mollis, enim turpis laoreet ex, sed cursus urna velit ac elit. Donec.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-             <div>Jakis tekst</div>
         </div>
         
+        <div id = "Skils">
+            <div class="SkilsBackground">
+                <div class="SkilsTitle">
+                        <h1>Umiejetnosci</h1>
+                </div>
+                <div class="SkilsDescription">
+                        <div class="CoUmiem">
+                            <h1>CO JUZ UMIEM</h1>
+                            <p>C</p>
+                            <p>C++</p>
+                            <p>C#</p>
+                        </div>
+                        <div class="CzegoSieUcze">
+                            <h1>CZEGO SIE UCZE</h1>
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>BOOTSTRAP</p>
+                        </div>
+                        <div class="Costamjeszcze">
+                            <h1>Cos tam jeszcze</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies, nulla quis aliquet mollis, enim turpis laoreet ex, sed cursus urna velit ac elit. Donec.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
         
-        
-        <div id="Kontakt">
+        <div id="Contact">
             <div class="Tkontakt">
                 <h1>KONTAKT</h1>
             </div>
@@ -69,29 +103,13 @@
                             <textarea name="wiadomosc" id="wiadomosc" rows="8" cols="40" placeholder="Wpisz tekst..." required></textarea>
                     </div>
                     <div class="send">
-                        <button class="przycisk" type="submit" >wyslij</button>
+                        <button class="przycisk" type="submit" >WYSLIJ</button>
                     </div>
                 </form>
                 
             </div>
-            <div class="contactinf">
-                <div class="localization" >
-                    <img src="images/localization.png" alt=""/>
-                    <p>Polska, Kraków</p>
-                </div>
-                <div class="poczta" >
-                    <img src="images/Mail.png" alt=""/>
-                    <p>Email@gmail.com</p>
-                </div>
-                <div class="phone" >
-                    <img src="images/phone.png" alt=""/>
-                    <p>123456789</p>
-                </div>
-            </div>
-            
-            
-            
         </div>
+        
         <footer>
             <h1>Copyright (c) Copyright Holder All Rights Reserved.</h1>
         </footer>

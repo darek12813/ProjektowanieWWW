@@ -7,6 +7,8 @@ body,html{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100vw;
+    height: 100vh;
 }
 #topnav{
      z-index: 10000000;
@@ -17,7 +19,7 @@ body,html{
     height: 50px;
     position: fixed;
     margin: 0;
-    padding: 0;
+    padding:0 ;
     color: white;
     opacity: .90;
     background-color:#900;
@@ -70,6 +72,54 @@ body,html{
   margin-top:-50px;
   margin-bottom:1px;
 }
+
+@media all and (max-width: 650px) {
+  #topnav {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media all and (min-width: 651px) {
+  #phonetopnav {
+    display: none;
+    visibility: hidden;
+  }
+}
+#phonetopnav{
+    z-index: 10000000;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    
+    
+}
+#phonetopnav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#phonetopnav a{
+    width: 100vw;
+    opacity: .95;
+    font-family: "Lato";
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color:#900;
+    background-image:-webkit-linear-gradient(top, #900 0%, #6A0808 40%, #620303 50%, #6A0808 100%);
+    background-image:-moz-linear-gradient(top, #900 0%, #6A0808 40%, #620303 50%, #6A0808 100%);
+    background-image:-ms-linear-gradient(top, #900 0%, #6A0808 40%, #620303 50%, #6A0808 100%);
+    background-image:-o-linear-gradient(top, #900 0%, #6A0808 40%, #620303 50%, #6A0808 100%);
+    background-image:linear-gradient(top, #900 0%, #6A0808 50%, #620303 50%, #6A0808 100%);
+}
+
+#phonetopnav a:hover:not(.active) {
+    font-family: "Nosifer";
+}
 #Home{
     display: flex;
     justify-content: center;
@@ -90,12 +140,23 @@ body,html{
     font-size: 48pt;
     margin: 0;
 }
+
+@media (max-width: 540px) {
+  .HomeTitle h1 {
+    font-size: 32pt;
+  }
+}
+
 .HomeTitle h2 {
     font-family: "Nosifer";
     font-size: 36pt;
     margin: 0;
 }
-
+@media (max-width: 540px) {
+  .HomeTitle h2 {
+    font-size: 20pt;
+  }
+}
 .kreska{
     display: flex;
     justify-content: center;
@@ -119,6 +180,11 @@ body,html{
     padding-top: 100px;
     padding-bottom: 100px;
 }
+@media (max-width: 650px) {
+  #About {
+     padding-top: 250px;
+  }
+}
 .AboutBackground{
      position: relative;
     align-items: center;
@@ -139,13 +205,23 @@ body,html{
     font-size: 14pt;
     font-weight: 400;
     letter-spacing: 1mm;
+    padding-top: 20px;
     color: white;
 }
+
 .AboutTitle h1{
     margin: 0;
 }
-.AboutTitle h2 {
-  font-size: 15pt;
+
+@media (max-width: 540px){
+    .AboutTitle{
+        font-size: 10pt;
+    }
+}
+@media (max-width: 400px){
+    .AboutTitle{
+        font-size: 7pt;
+    }
 }
 
 .opis{
@@ -159,6 +235,12 @@ body,html{
     margin-left: 20px;
     
 }
+@media (max-width: 1100px) {
+  .opis  {
+    flex-direction:column;
+  }
+}
+
 
 .opis h1{
     font-family: "Nosifer", sans-serif;
@@ -186,7 +268,17 @@ body,html{
     position: relative;
     top: -10px;
 }
-
+@media (max-width: 460px){
+    .opis h1{
+        font-size: 8pt;
+    }
+    .opis div{
+        width: 80%;
+    }
+    .opis p{
+        font-size: 15pt;
+    }
+}
 .opis p{
     font-size: 15pt;
     margin-bottom: 50px;
@@ -200,6 +292,12 @@ body,html{
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+@media (max-width: 650px) {
+  #Skils {
+     padding-top: 300px;
+  }
 }
 .SkilsBackground{
      position: relative;
@@ -227,12 +325,28 @@ body,html{
     margin: 0;
 }
 
+
+@media (max-width: 540px){
+    .SkilsTitle{
+        font-size: 10pt;
+    }
+}
+@media (max-width: 400px){
+    .SkilsTitle{
+        font-size: 7pt;
+    }
+}
 .SkilsDescription{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     
+}
+@media (max-width: 1100px) {
+  .SkilsDescription  {
+    flex-direction:column;
+  }
 }
 .SkilsDescription div+div{
     margin-left: 20px;
@@ -257,6 +371,18 @@ body,html{
     -ms-transition:all .8s ease;
     -o-transition:all .8s ease;
     transition:all .8s ease;
+}
+
+@media (max-width: 400px){
+    .SkilsDescription h1{
+        font-size: 8pt;
+    }
+    .SkilsDescription div{
+        width: 80%;
+    }
+    .SkilsDescription p{
+        font-size: 15pt;
+    }
 }
 
 .SkilsDescription div:hover{
@@ -296,7 +422,14 @@ body,html{
     display:inline-block;
     margin-bottom: 15px;
 }
-
+@media (max-width: 680px){
+    .ii ,.tt, .mm{
+    display:block;
+    flex-direction: column;
+        margin-bottom: 15px;
+    }
+    
+}
 
 input[type*='text']{
     
@@ -310,7 +443,17 @@ input[type*='text']{
     margin-top:20px;
     font-size:14pt
 }
-
+@media (max-width: 680px){
+    input[type*='text']{
+        width:450px;
+        margin: 0;
+    }
+}
+@media (max-width: 460px) {
+  input[type*='text']{
+    width: 300px;
+  }
+}
 
 textarea{
     font-family: "Lato";
@@ -322,6 +465,19 @@ textarea{
     border:1px solid black;
     border-radius: 7px;
     font-size:14pt
+}
+@media (max-width: 680px){
+    textarea{
+        width:450px;
+    }
+}
+@media (max-width: 460px) {
+  textarea {
+    width: 300px;
+  }
+    .Tkontakt{
+        font-size: 14pt;
+    } 
 }
 
 .send button{
@@ -348,7 +504,11 @@ textarea{
     overflow: hidden;
     cursor: pointer;
 }
-
+@media (max-width: 680px){
+    .send button{
+        left: 0px;
+    }
+}
 .send button:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,.85),0 17px 30px 0 #900;
 }
@@ -369,9 +529,17 @@ footer{
 footer h1{
     margin: 0;
 }
+@media (max-width: 480px){
+    footer{
+        font-size: 6pt;
+    }
+}
 
-
-
+@media (max-width: 380px){
+    footer{
+        font-size: 5pt;
+    }
+}
 
 
 
